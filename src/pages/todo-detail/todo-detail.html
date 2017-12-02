@@ -1,0 +1,45 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>TodoDetail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-item>
+        <ion-label stacked>Tiêu đề</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label stacked>Mô tả</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label stacked>Ngày</ion-label>
+            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="mDate"></ion-datetime>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label stacked>Giờ</ion-label>
+            <ion-datetime displayFormat="HH:mm" [(ngModel)]="mDate"></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+ 
+</ion-content>
